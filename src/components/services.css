@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    width: 100%;
+    background: #f7f9fc;
+    padding: 80px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.services .heading h1 {
+    color: #2d3954;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.services .heading p {
+    color: #72809d;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.services #services-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.services #services-box .box {
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+    cursor: pointer;
+    text-align: center;
+    width: 15%;
+    padding: 2rem 0rem;
+}
+
+.services #services-box .box img {
+    height: 5rem;
+    margin: auto;
+    width: 5rem;
+    margin-bottom: .7rem;
+}
+
+.services #services-box .box h4 {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.services #services-box .box span {
+    color: #2d3954;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+@media (max-width:991px){
+    .services .heading h1 {
+        font-size: 30px;
+    }
+    .services #services-box .box {
+        width: 25%;
+    }
+}
+@media (max-width:550px){
+    .services .heading h1 {
+        font-size: 20px;
+    }
+    .services #services-box .box {
+        width: 90%;
+    }
+}

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    padding: 1rem 5%;
+    z-index: 999;
+}
+header .logo img{
+    height: 2.5rem;
+}
+header .navbar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header .navbar ul li{
+    margin-left: 1.4rem;
+}
+header .navbar ul li a{
+    color: #000;
+    transition: .1rem;
+    font-size: 1.5rem;
+}
+header .navbar ul li:hover a{
+    color: #27ae60;
+}
+header button{
+    background: #27ae60;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 17px 15px;
+    display: flex;
+}
+header button i{
+    padding-right: .5rem;
+}
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 2.2rem;
+    color:#333;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media (max-width:991px){
+   
+
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 3rem;
+    }
+}
+@media (max-width:768px){
+    header .navbar{
+        background: #27ae60;
+        border-top: .3rem solid #27ae60;
+        position:absolute;
+        top:100%; left:0; right:0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .5s;
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar ul{
+        display: block;
+    }
+    header .navbar ul li{
+        margin-bottom: .5rem;
+    }
+    header .navbar ul li a{
+        color: #fff;
+    }
+    header .fa-bars{
+        display: block;
+    }
+}
+@media (max-width:400px){
+    header{
+        padding: 1rem 3%;
+    }
+    header button{
+        border-radius: 5px;
+        font-weight: 700;
+        padding: 12px 10px;
+        display: flex;
+    }
+    header button i{
+        padding-right: .5rem;
+    }
+}

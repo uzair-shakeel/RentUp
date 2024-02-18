@@ -1,0 +1,118 @@
+.pricing{
+    padding: 80px 0px;
+}
+.pricing h1 {
+    color: #2d3954;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.pricing p {
+    color: #72809d;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.pricing .box-container{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+.pricing .box-container .box{
+    border-radius: 10px;
+    padding: 30px;
+    width: 25%;
+    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+}
+.pricing .box-container .box h3{
+    font-size: 25px;
+    text-align: center;
+}
+.pricing .box-container .box h1{
+    font-size: 70px;
+    color: #000;
+}
+.pricing .box-container .box h1 span{
+    font-size: 30px;
+    font-weight: 500;
+}
+.pricing .box-container .box ul{
+    margin-top: 4rem;
+    list-style: none;
+}
+.pricing .box-container .box ul li{
+    display: flex;
+    margin-bottom: 20px;
+}
+.pricing .box-container .box ul li p{
+    color: #000;
+}
+.pricing .box-container .box ul li label i{
+    background: rgba(39, 174, 96, 0.12);
+    color: rgb(39, 174, 96);
+    margin-right: 20px;
+    border-radius: 50%;
+    padding: .7rem;
+    font-size: .5rem;
+}
+.pricing .box-container .box ul li label  .red{
+    background: rgba(220, 53, 69, 0.12);
+    color: rgb(220, 56, 72);
+}
+.pricing .box-container .box button{
+    background: #fff;
+    border: 5px solid #27ae601f;
+    border-radius: 50px;
+    color: #27ae60;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 40px;
+    width: 100%;
+    transition: 1s;
+}
+.pricing .box-container .box button:hover{
+    background: #27ae60;
+    color: #fff;
+    cursor: pointer;
+}
+.pricing .box-container .box .btn{
+    background: rgb(39, 174, 96);
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+.pricing .box-container .box .btn:hover{
+    background: #fff;
+    color: #27ae60;
+    cursor: pointer;
+}
+.pricing .box-container .box .best-btn{
+    background: rgb(220, 56, 72);
+    border: none;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width:1050px){
+    .pricing .box-container .box{
+        width: 40%;
+    }
+}
+@media (max-width:768px){
+    .pricing .box-container .box{
+        width: 90%;
+    }
+    .pricing h1 {
+        font-size: 25px;
+    }
+    .pricing p {
+        font-size: 1rem;
+    }
+}

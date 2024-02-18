@@ -1,0 +1,102 @@
+.blog{
+    padding: 80px 0px;
+}
+.blog h1 {
+    color: #2d3954;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.blog p {
+    color: #72809d;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.blog .box-container{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+.blog .box-container .box{
+    width: 25%;
+    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+}
+.blog .box-container .box img{
+    width: 100%;
+}
+.blog .box-container .box .text{
+    padding: 30px;
+}
+.blog .box-container .box .text .rent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog .box-container .box .text .rent span{
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 15px;
+    background: rgba(37, 181, 121, 0.1);
+    color: rgb(37, 181, 121);
+}
+.blog .box-container .box .text .rent i{
+    color: #72809d;
+    font-size: 2rem;
+}
+.blog .box-container .box .text h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.blog .box-container .box .text p{
+    margin-top: .5rem;
+    text-align: left;
+}
+.blog .box-container .box .text p i{
+    margin-right: .4rem;
+}
+.blog .box-container .box .buttons{
+    border-top: 1px solid #e4e8f3;
+    padding: 15px 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.blog .box-container .box .buttons button{
+    background: #27ae60;
+    border: none;
+    border-radius: .3rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 12px 20px;
+}
+.blog .box-container .box .buttons span{
+    font-size: 1.5rem;
+}
+
+
+@media (max-width:1050px){
+    .blog .box-container .box{
+        width: 40%;
+    }
+}
+@media (max-width:768px){
+    .blog .box-container .box{
+        width: 90%;
+    }
+    .blog h1 {
+        font-size: 25px;
+    }
+    .blog p {
+        font-size: 1rem;
+    }
+}

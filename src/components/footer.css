@@ -1,0 +1,135 @@
+footer{
+    background-color: #1d2636;
+    color: #fff;
+    padding: 50px 20px;
+}
+footer .container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+footer .container .box{
+    width: 15%;
+}
+footer .container .box img{
+    width: 15rem;
+    margin-bottom: .5rem;
+}
+footer .container .box h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+footer .container .box p{
+    opacity: .6;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+footer .container .box input{
+    width: 70%;
+    padding: 17px 30px;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+footer .container .box .subscribebtn{
+    background: #27ae60;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 17px 30px;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+}
+footer .container .box1{
+    width: 35%;
+}
+footer .container .box h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+footer .container .box ul{
+    list-style: none;
+}
+footer .container .box ul li{
+    font-size: 1.5rem;
+    opacity: .6;
+    margin-bottom: .5rem;
+    transition: .5s;
+}
+footer .container .box ul li:hover{
+    margin-left: .3rem;
+    cursor: pointer;
+    color: #27ae60;
+}
+.designer{
+    text-align: center;
+    border-top: 1px solid #92979f;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+
+
+
+
+@media (max-width:991px){
+    footer .container .box{
+        width: 30%;
+    }
+    footer .container .box1{
+        width: 60%;
+    }
+    footer .container .box input{
+        width: 50%;
+    }
+}
+@media (max-width:768px){
+    footer .container .box{
+        width: 100%;
+    }
+    footer .container .box1{
+        width: 100%;
+    }
+    footer .container .box input{
+        width: 50%;
+    }
+}
+@media (max-width:400px){
+    footer .container .box{
+        width: 100%;
+    }
+    footer .container .box1{
+        width: 100%;
+    }
+    footer .container .box input{
+        width: 100%;
+        padding: 17px 30px;
+        border-radius: .5rem;
+        border: none;
+        outline: none;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    footer .container .box .subscribebtn{
+        width: 100%;
+        background: #27ae60;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 700;
+        padding: 17px 30px;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+}
